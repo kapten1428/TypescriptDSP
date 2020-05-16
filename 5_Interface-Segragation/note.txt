@@ -1,0 +1,3 @@
+- “Clients should not be forced to depend upon interfaces that they do not use.” — Robert Martin, paper “The Interface Segregation Principle”
+
+- It’s tempting to add a new method to an existing interface even though it implements a different responsibility and would be better separated in a new interface. That’s often the beginning of interface pollution, which sooner or later leads to bloated interfaces that contain methods implementing several responsibilities.
