@@ -1,0 +1,5 @@
+Depedency injection = IoC container
+
+-Reflection
+The ability to make use of metadata to provide 
+runtime information and inspection data about classes, interface, and types

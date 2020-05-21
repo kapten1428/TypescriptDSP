@@ -1,0 +1,1 @@
+Factory Pattern is the single responsibility and Open/Close principles
