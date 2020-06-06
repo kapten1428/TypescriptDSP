@@ -12,6 +12,7 @@ export interface IDepC {
     doC(): void;
 }
 
+// @Register("IDepA", [])
 class ConcreteA implements IDepA {
     doA(): void {
         console.log("Doing A");
@@ -19,6 +20,7 @@ class ConcreteA implements IDepA {
 
 }
 
+// @Register("IDepB", [])
 class ConcreteB implements IDepB {
     doB(): void {
         console.log("Doing B");

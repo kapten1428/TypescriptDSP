@@ -39,4 +39,13 @@ export class IoCContainer {
     private getDependenciesImplementations(names: string[]): Object[] {
         return names.map(name => this.resolve(name));
     }
+
+    
+}
+
+export function Register(name: string, dependencies: string[]): Function {
+    let container = IoCContainer.instance;
+    return function<T extends {new (...args: any[]): {}}>(constructor: T) {
+        container.register(name, dependencies, constructor);
+    }
 }
