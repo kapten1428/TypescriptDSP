@@ -1,0 +1,6 @@
+Decorator pattern can add responsibility at runtime.
+
+The decorator pattern is a design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class
+
+class: https://prnt.sc/t3b0g1
+image: https://prnt.sc/t3avr8
