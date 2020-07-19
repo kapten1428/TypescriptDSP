@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const card_deck_1 = require("./card-deck");
+const card_1 = require("./card");
+let cardDeck = new card_deck_1.CardDeck();
+cardDeck.add(new card_1.Card('Card 1', 34, 56));
+cardDeck.add(new card_1.Card('Card 2', 12, 34));
+let secondDeck = new card_deck_1.CardDeck();
+secondDeck.add(new card_1.Card('Card 3', 34, 56));
+secondDeck.add(new card_1.Card('Card 4', 12, 34));
+cardDeck.add(secondDeck);
+cardDeck.add(new card_1.Card('Card 5', 99, 100));
+console.log(cardDeck.display());
